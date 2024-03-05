@@ -41,7 +41,7 @@
             //                                 -------------------------------------------------------  ---------------------------------------------------------
             //                                 |          |   GUI    |   DEL   |  RET   |   SYM_L   |  |   NUM_L   |  SPACE   |   BSPC   |   MENU     |          |
             //                                 -------------------------------------------------------  ---------------------------------------------------------
-                                                &none      &kp LGUI    &mt ALT DEL  &mt LSHIFT RET  &mo SYM_L      &mo NUM_L   &kp SPACE  &mt RALT BSPC   &kp K_MENU     &none
+                                                &none      &kp LGUI    &mt ALT DEL  &mt LSHIFT RET  &mo SYM_L      &mo NUM_L   &kp SPACE  &mt RALT BSPC   &kp K_CMENU     &none
             >;
         };
         symbol_layer {
