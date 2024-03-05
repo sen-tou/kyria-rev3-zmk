@@ -29,12 +29,12 @@
             // |  ESC  |  Q  |  W  |  E   |  R   |  T     |                                            |  Y   |  U    |  I    |  O   |   P   |   \  |
             // |  TAB  |  A  |  S  |  D   |  F   |  G     |                                            |  H   |  J    |  K    |  L   |   ;   |   '  |
             // | SHIFT |  Z  |  X  |  C   |  V   |  B     | L SHIFT  | L SHIFT |  | LAYER 1 | L SHIFT  |  N   |  M    |  ,    |  .   |   /   | CTRL |
-            //                     | GUI  | DEL  | SHIFT  |  CTRL    |   ESC   |  |   RET   |  SPACE   | BSPC | TAB   | R-ALT |
+            //                     | GUI  | DEL  | SHIFT  |  CTRL    |   NUM   |  |   SYM   |  SPACE   | BSPC | DEL   | R-ALT |
             bindings = <
             &kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                  &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
             &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                  &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT            &mo 1   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                                  &kp LGUI &kp DEL &kp LSHFT &kp LCTRL &kp ESC       &kp RET &kp SPACE &kp BSPC &kp TAB &kp RALT
+            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &none &none            &none   &none &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+                                  &kp LGUI &kp DEL &kp LSHFT &kp LCTRL &mo NUM       &mo SYM &kp SPACE &kp BSPC &kp DEL &kp RALT
             >;
         };
         function_layer {
