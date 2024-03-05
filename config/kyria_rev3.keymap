@@ -27,28 +27,28 @@
 
         default_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  Q  |  W  |  E   |  R   |  T     |                                            |  Y   |  U    |  I    |  O   |   P   |   \  |
+            // |  ESC  |  Q  |  W  |  E   |  R   |  T     |                                            |  Y   |  U    |  I    |  O   |   P   | ESC  |
             // |  TAB  |  A  |  S  |  D   |  F   |  G     |                                            |  H   |  J    |  K    |  L   |   ;   | SHFT |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B     | L SHIFT  | L SHIFT |  | LAYER 1 | L SHIFT  |  N   |  M    |  ,    |  .   |   /   | CTRL |
-            //                     | GUI  | DEL  | SHIFT  |  CTRL    |   NUM   |  |   SYM   |  SPACE   | BSPC | DEL   | R-ALT |
+            // | SHIFT |  Z  |  X  |  C   |  V   |  B     | L SHIFT  | L SHIFT |==| LAYER 1 | L SHIFT  |  N   |  M    |  ,    |  .   |   /   | CTRL |
+            //                     | GUI  | DEL  | SHIFT  |  CTRL    |   SYM   |==|   NUM   |  SPACE   | BSPC | DEL   | R-ALT |
             bindings = <
-            &kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                         &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-            &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                         &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
-            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &none &none                         &none   &mo FUN     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                                  &kp LGUI &kp DEL &kp LSHFT &kp LCTRL &mo NUM          &mo SYM &kp SPACE   &kp BSPC &kp DEL &kp RALT
+            &kp ESC   &kp Q &kp W &kp E     &kp R   &kp T                                                       &kp Y       &kp U       &kp I     &kp O   &kp P    &kp ESC
+            &kp TAB   &kp A &kp S &kp D     &kp F   &kp G                                                       &kp H       &kp J       &kp K     &kp L   &kp SEMI &kp RSHFT
+            &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B       &none       &none           &none   &mo FUN     &kp N       &kp M       &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+                                  &kp LGUI  &kp DEL &kp LSHFT   &kp LCTRL   &mo SYM         &mo NUM &kp SPACE   &kp BSPC    &kp DEL     &kp RALT
             >;
         };
         symbol_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |       |   !  |  @   |   #  |   $  |   %  |                                         |   ^  |   &  |   *  |  -   |  _   |      |
             // |       |      |  {   |  [   |   (  |   <  |                                         |   >  |   )  |  ]   |  }   |      |      |
-            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |  ,   |  .   |      |      |
-            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+            // |       |      |  ~   |  \   |   |  |      |      |      |      ==     |      |      |      |   `  |  '   |  "   |      |      |
+            //                       |      |      |      |      |      |      ==     |      |      |      |      |      |
             bindings = <
-            &trans &trans &trans &trans &trans &trans             &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans                   &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
-                                 &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+            &trans &kp EXCL &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT                                     &kp CARET   &kp AMPS    &kp STAR    &kp MINUS   &kp UNDER   &trans
+            &trans &trans   &kp LBRC    &kp LBKT    &kp LPAR    &kp LT                                          &kp GT      &kp RPAR    &kp RBKT    &kp RBRC    &trans      &trans
+            &trans &trans   &kp TILDE   &kp BSLH    &kp PIPE    &trans    &trans &trans          &trans &trans  &trans      &kp GRAVE   &kp SQT     &kp DQT     &trans      &trans
+                                        &trans      &trans      &trans    &trans &trans          &trans &trans  &trans &trans &trans
             >;
         };
         number_layer {
