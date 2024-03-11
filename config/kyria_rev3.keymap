@@ -31,12 +31,12 @@
             // | ESC   | Q | W | E   | R    | T        |                                           |  Y   |  U    |  I    |  O   |   P   | ESC  |
             // | TAB   | A | S | D   | F    | G        |                                           |  H   |  J    |  K    |  L   |   ;   | SHFT |
             // | SHIFT | Z | X | C   | V    | B        | ---      | ---       |==| ---      |          |  N   |  M    |  ,    |  .   |   /   | CTRL |
-            //                 | --- | WIN  | ALT/ESC  | CTRL/RET | LSHFT/DEL |==| FUN/BSPC |  SYM/SPACE   | RALT/TAB | MED/MENU   | --- |
+            //                 | --- | WIN  | ALT/ESC  | CTRL/RET | LCTRL/DEL |==| LSHFT/BSPC |  SYM/SPACE   | RALT/TAB | MED/MENU   | --- |
             bindings = <
             &kp ESC   &kp Q &kp W &kp E     &kp R   &kp T                                                       &kp Y       &kp U       &kp I     &kp O   &kp P    &kp ESC
             &kp TAB   &kp A &kp S &kp D     &kp F   &kp G                                                       &kp H       &kp J       &kp K     &kp L   &kp SEMI &kp RSHFT
             &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B       &none       &none           &none   &none     &kp N       &kp M       &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                                  &none  &kp LGUI &mt LALT ESC &mt LCTRL RET &mt LSHFT  DEL          &lt FUN BSPC &lt SYM SPACE   &mt RALT TAB    &lt MED K_APP     &none
+                                  &none  &kp LGUI &mt LALT ESC &mt LSHFT RET &mt LCTRL DEL          &lt FUN BSPC &lt SYM SPACE   &mt RALT TAB    &lt MED K_APP     &none
             >;
         };
         symbol_layer {
@@ -68,10 +68,10 @@
         };
         media_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         | C_BRI_INC | C_VOL_UP | C_MUTE | C_VOL_DN |      |      |
-            // |       |      |      |BTSEL3|BTSEL4|      |                                         | C_BRI_DEC | C_PREV   | C_PP   | C_NEXT   |      |      |
-            // | RGB_EFF | RGB_EFR | RGB_BRI | RGB_TOG | RGB_BRD |      |      |      |      |      |      |      |      |      |      |      |      |      |
-            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+            // |         |         | BT_CLR  | BTSEL0  | BTSEL1  | BTSEL2 |                                         | C_BRI_INC | C_VOL_UP | C_MUTE | C_VOL_DN |      |      |
+            // |         |         |         | BTSEL3  | BTSEL4  |        |                                         | C_BRI_DEC | C_PREV   | C_PP   | C_NEXT   |      |      |
+            // | RGB_EFF | RGB_EFR | RGB_BRI | RGB_TOG | RGB_BRD |        |      |      |      |      |      |      |           |          |        |          |      |      |
+            //                     |         |         |         |        |      |      |      |      |      |      |           |          |
             bindings = <
             &trans &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2              &kp C_BRI_INC &kp C_VOL_UP &kp C_MUTE &kp C_VOL_DN &trans &trans
             &trans &trans &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans                    &kp C_BRI_DEC &kp C_PREV &kp C_PP &kp C_NEXT &trans &trans
