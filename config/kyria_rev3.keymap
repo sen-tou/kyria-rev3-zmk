@@ -28,15 +28,15 @@
 
         default_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // | ESC   | Q | W | E   | R    | T        |                                                                |  Y   |  U    |  I    |  O   |   P   | ESC  |
-            // | TAB   | A | S | D   | F    | G        |                                                                |  H   |  J    |  K    |  L   |   ;   | SHFT |
-            // | SHIFT | Z | X | C   | V    | B        | HOME      | ---        |==           | ---       | END         |  N   |  M    |  ,    |  .   |   /   | CTRL |
-            //                 | --- | WIN  | ALT/ESC  | LSHFT/RET | LCTRL/BSPC |==           | LSHFT/DEL | SYM/SPACE   | RALT/TAB | MED/MENU   | --- |
+            // | ESC   | Q | W | E   | R    | T        |                                                              |  Y   |  U    |  I    |  O   |   P   | ESC  |
+            // | TAB   | A | S | D   | F    | G        |                                                              |  H   |  J    |  K    |  L   |   ;   | SHFT |
+            // | SHIFT | Z | X | C   | V    | B        | HOME      | ---       |==           | ---      | END         |  N   |  M    |  ,    |  .   |   /   | CTRL |
+            //                 | --- | WIN  | ALT/TAB  | LSHFT/RET | LCTRL/ESC |==           | FUN/BSPC | SYM/SPACE   | RALT/DEL | MED/MENU   | --- |
             bindings = <
-            &kp ESC   &kp Q &kp W &kp E     &kp R   &kp T                                                                 &kp Y       &kp U       &kp I     &kp O   &kp P    &kp ESC
-            &kp TAB   &kp A &kp S &kp D     &kp F   &kp G                                                                 &kp H       &kp J       &kp K     &kp L   &kp SEMI &kp RSHFT
-            &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B   &kp HOME   &none                  &none   &kp END             &kp N       &kp M       &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                            &none  &kp LGUI &mt LALT ESC    &mt LSHFT RET &mt LCTRL BSPC      &lt FUN DEL &lt SYM SPACE   &mt RALT TAB    &lt MED K_APP     &none
+            &kp ESC   &kp Q &kp W &kp E     &kp R   &kp T                                                                  &kp Y       &kp U       &kp I     &kp O   &kp P    &kp ESC
+            &kp TAB   &kp A &kp S &kp D     &kp F   &kp G                                                                  &kp H       &kp J       &kp K     &kp L   &kp SEMI &kp RSHFT
+            &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B   &kp HOME   &none                  &none   &kp END              &kp N       &kp M       &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+                            &none  &kp LGUI &mt LALT TAB    &mt LSHFT RET &mt LCTRL ESC      &lt FUN BSPC  &lt SYM SPACE   &mt RALT DEL    &lt MED K_APP     &none
             >;
         };
         symbol_layer {
