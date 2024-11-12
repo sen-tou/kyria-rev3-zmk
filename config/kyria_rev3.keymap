@@ -37,7 +37,16 @@
 &kp GRAVE  &kp Q  &kp W  &kp E        &kp R        &kp T                                                        &kp Y            &kp U        &kp I        &kp O    &kp P     &kp ESC
 &kp TAB    &kp A  &kp S  &mt LMETA D  &mt LCTRL F  &kp G                                                        &kp H            &mt RCTRL J  &mt RMETA K  &kp L    &kp SEMI  &kp BACKSPACE
 &kp LSHFT  &kp Z  &kp X  &kp C        &kp V        &kp B         &none      &none    &none      &none           &kp N            &kp M        &kp COMMA    &kp DOT  &kp FSLH  &kp RSHIFT
-                         &none        &none        &lt 2 DELETE  &kp SPACE  &kp ESC  &kp ENTER  &kp LEFT_SHIFT  &lt 1 BACKSPACE  &none        &mo 3
+                         &tog 1       &kp LMETA    &lt 3 DELETE  &kp SPACE  &kp ESC  &kp ENTER  &kp LEFT_SHIFT  &lt 2 BACKSPACE  &none        &mo 4
+            >;
+        };
+
+        colemak_dh {
+            bindings = <
+&trans  &kp Q  &kp W  &kp F   &kp P   &kp B                                   &kp J   &kp L   &kp U   &kp Y   &trans  &trans
+&trans  &kp A  &kp R  &kp S   &kp T   &kp G                                   &kp M   &kp N   &kp E   &kp I   &kp O   &trans
+&trans  &kp Z  &kp X  &kp C   &kp D   &kp V   &trans  &trans  &trans  &trans  &kp K   &kp H   &trans  &trans  &trans  &trans
+                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
