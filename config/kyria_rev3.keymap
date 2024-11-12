@@ -34,10 +34,10 @@
             //                 | --- | WIN  | ALT/TAB  | LSHFT/RET | LCTRL/ESC |==           | FUN/BSPC | SYM/SPACE   | RALT/DEL | MED/MENU   | --- |
 
             bindings = <
-&kp GRAVE  &kp Q  &kp W  &kp E        &kp R        &kp T                                                        &kp Y            &kp U        &kp I        &kp O    &kp P     &kp ESC
-&kp TAB    &kp A  &kp S  &mt LMETA D  &mt LCTRL F  &kp G                                                        &kp H            &mt RCTRL J  &mt RMETA K  &kp L    &kp SEMI  &kp BACKSPACE
-&kp LSHFT  &kp Z  &kp X  &kp C        &kp V        &kp B         &none      &none    &none      &none           &kp N            &kp M        &kp COMMA    &kp DOT  &kp FSLH  &kp RSHIFT
-                         &tog 1       &kp LMETA    &lt 3 DELETE  &kp SPACE  &kp ESC  &kp ENTER  &kp LEFT_SHIFT  &lt 2 BACKSPACE  &none        &mo 4
+&kp GRAVE  &kp Q  &kp W  &kp E        &kp R        &kp T                                                          &kp Y            &kp U        &kp I        &kp O    &kp P     &kp ESC
+&kp TAB    &kp A  &kp S  &mt LMETA D  &mt LCTRL F  &kp G                                                          &kp H            &mt RCTRL J  &mt RMETA K  &kp L    &kp SEMI  &kp BACKSPACE
+&kp LSHFT  &kp Z  &kp X  &kp C        &kp V        &kp B         &none        &none    &none      &none           &kp N            &kp M        &kp COMMA    &kp DOT  &kp FSLH  &kp RSHIFT
+                         &tog 1       &kp LMETA    &lt 3 DELETE  &lt 2 SPACE  &kp ESC  &kp ENTER  &kp LEFT_SHIFT  &lt 2 BACKSPACE  &mo 3        &mo 4
             >;
         };
 
