@@ -12,7 +12,7 @@
 #define HOST_OS 1
 #include "zmk-helpers/helper.h"
 // Source unicode-chars for desired languages
-#include "zmk-helpers/unicode-chars/german.dtsi"
+#include "zmk-helpers/german.dtsi"
 
 #define DEF 0
 #define SYM 1
